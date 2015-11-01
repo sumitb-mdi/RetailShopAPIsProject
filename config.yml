@@ -1,0 +1,15 @@
+mongoServer: localhost
+dbUsername: sumit
+dbPassword: sumit_temp_password
+databaseName: retail_db
+dbServerConnectionStringTemplate:   mongodb://%s:%s@ds045684.mongolab.com:45684/%s      #mongodb://<dbuser>:<dbpassword>@ds045684.mongolab.com:45684/<dbname>
+
+
+swagger:
+  resourcePackage: com.sumit.retailapis.resources
+
+server:
+  adminConnectors:
+    - type: http
+      port: 8081
+
